@@ -58,12 +58,10 @@ pipeline {
         stage('My SDK Build') {
           steps {
             echo "Start build My sdk..."
-
-		        // dir('Scripts') {
-          //   	    sh "./Build_SDK_UnityPackage.sh ${VERSION}"
-          //       }
-
+            dir('Scripts') {
+              sh "./Script/build_sdk.sh ${VERSION}"
             }
+          }
         }
 
         stage('Build Zip') { 
