@@ -1,0 +1,81 @@
+//FunPlus SDK Jenkins Pipeline
+
+def sdkPrefix 		= 'My-SDK'
+def sdkBuildName 	= 'none-sdkBuildName'
+def safeBranchName 	= 'none-branchName'
+
+pipeline {
+    agent any
+
+    parameters {             
+        string(defaultValue: '1.0.0', description: 'My SDK version', name: 'Version')
+    }
+
+    stages {
+        stage('Checkout') { 
+          steps {                 
+              	echo "My SDK - Checkout"
+              	cleanWs()
+                checkout scm
+              }
+            }
+
+        stage('Prepare Info') { 
+            steps {
+              echo "My SDK - Prepare info VERSION = ${VERSION}"
+
+              script {
+                gitCommit = sh(returnStdout: true, script: 'git rev-parse HEAD').trim()
+                shortCommit = gitCommit.take(8)
+                echo "shortCommit = ${shortCommit}"
+        
+                dateValue = sh(returnStdout: true, script: 'TZ=Asia/Shanghai date  +\'%Y%m%d\'').trim()
+                echo "dataValue = ${dateValue}"
+
+                branchName  = env.BRANCH_NAME
+                if (branchName == null) {
+                  try{
+                    branchName = sh(returnStdout: true, script: 'git symbolic-ref --short HEAD').trim()
+                  } catch (exc) {
+                    echo 'git symbolic-ref --short HEAD failed!'
+                  } finally {
+                    branchName = 'none-branchName'
+                  }
+                }
+                safeBranchName = branchName.replace('/', '_')
+                echo "safeBranchName = ${safeBranchName}"
+
+                sdkBuildName = "${sdkPrefix}-${VERSION}.${env.BUILD_NUMBER}-$dateValue-${shortCommit}.zip"
+                echo "sdkBuildName = ${sdkBuildName}" 
+
+                currentBuild.description = "#${VERSION}.${BUILD_NUMBER}"
+                currentBuild.displayName = "#SDK-${VERSION}.${BUILD_NUMBER}-${shortCommit}"
+              }
+
+            }
+        }
+
+        stage('My SDK Build') {
+          steps {
+            echo "Start build My sdk..."
+
+		        // dir('Scripts') {
+          //   	    sh "./Build_SDK_UnityPackage.sh ${VERSION}"
+          //       }
+
+          //   }
+        }
+
+        stage('Build Zip') { 
+            steps {
+              echo "Build Zip"            
+            }
+        }
+
+        stage('Upload To SFtp') { 
+            steps {
+              echo "Upload to sftp"            
+            }
+        }
+    }
+}
