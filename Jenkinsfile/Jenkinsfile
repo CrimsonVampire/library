@@ -1,4 +1,4 @@
-//FunPlus SDK Jenkins Pipeline
+//My SDK Jenkins Pipeline
 
 def sdkPrefix 		= 'My-SDK'
 def sdkBuildName 	= 'none-sdkBuildName'
@@ -9,14 +9,18 @@ pipeline {
 
     parameters {             
         string(defaultValue: '1.0.0', description: 'My SDK version', name: 'Version')
+        string(defaultValue: '/Users/admin/Documents/android_sdk/local.properties', description: 'Android local properties path', name: 'LOCAL_PROPERTIES_PATH')
     }
 
     stages {
         stage('Checkout') { 
           steps {                 
               	echo "My SDK - Checkout"
+                echo "${LOCAL_PROPERTIES_PATH}"
               	cleanWs()
                 checkout scm
+                sh "$pwd"
+                // sh "cp -r /Users/admin/Documents/android_sdk/local.properties" 
               }
             }
 
@@ -58,9 +62,9 @@ pipeline {
         stage('My SDK Build') {
           steps {
             echo "Start build My sdk..."
-            dir('Scripts') {
-              sh "./Script/build_sdk.sh ${VERSION}"
-            }
+            // dir('Script') {
+            //   sh "./Script/build_sdk.sh ${VERSION}"
+            // }
           }
         }
 
