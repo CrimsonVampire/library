@@ -7,6 +7,6 @@ Pod::Spec.new do |s|
   s.homepage = "https://github.com/CrimsonVampire"
   s.source = { :path => '.' }
 
-  s.ios.deployment_target    = '11.0'
+  s.ios.deployment_target    = '9.0'
   s.ios.vendored_framework   = 'ios/TestLibrary.framework'
 end
