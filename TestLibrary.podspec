@@ -54,7 +54,7 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "xiaorui.wang" => "xiaorui.wang" }
+  spec.author             = { "Flandre" => "449298939@qq.com" }
   # Or just: spec.author    = "xiaorui.wang"
   # spec.authors            = { "xiaorui.wang" => "xiaorui.wang" }
   # spec.social_media_url   = "https://twitter.com/xiaorui.wang"
