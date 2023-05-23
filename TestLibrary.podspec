@@ -8,8 +8,8 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, '11.0'
   spec.ios.deployment_target = '11.0'
   spec.source       = { :git => 'https://github.com/CrimsonVampire/library.git', :tag => spec.version.to_s }
-  spec.source_files  = 'TestLibrary/**/*.{h,m}'
-  spec.public_header_files = "TestLibrary/**/*.h"
+  spec.source_files  = 'TestLibrary/**/*.h'
+  spec.public_header_files = "TestLibrary/TestLibrary.h"
   # spec.ios.vendored_framework   = 'TestLibrary.a'
-  spec.ios.vendored_libraries   = 'TestLibrary.a'
+  spec.vendored_libraries   = 'TestLibrary.a'
 end
