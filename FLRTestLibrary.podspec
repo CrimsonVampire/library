@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
   # spec.source       = { :git => 'https://github.com/CrimsonVampire/library.git', :tag => spec.version.to_s }
   spec.source       = {
     http: "https://github.com/CrimsonVampire/library/releases/download/#{spec.version.to_s}/FLRTestLibrary.zip",
-    sha1: 'ce9fcddfa9c8ea6120932c216dd203cb89c8dcb2'
+    sha1: '37b344fe2e0cfd417eeb189fc0095966f74e9408'
   } 
   # spec.source_files  = 'FLRTestLibrary/**/*.h'
   # spec.public_header_files = "FLRTestLibrary/**/*.h"
