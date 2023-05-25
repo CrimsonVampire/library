@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   #   http: "https://github.com/CrimsonVampire/library/releases/download/#{spec.version.to_s}/FLRTestLibrary.zip",
   #   sha1: '37b344fe2e0cfd417eeb189fc0095966f74e9408'
   # } 
-  spec.source_files  = 'ios/**/*.h'
-  spec.public_header_files = "ios/**/*.h"
-  spec.ios.vendored_libraries   = 'ios/libFLRTestLibrary.a'
+  spec.source_files  = 'FLRTestLibrary/lib/**/*.h'
+  spec.public_header_files = "FLRTestLibrary/lib/**/*.h"
+  spec.ios.vendored_libraries   = 'FLRTestLibrary/lib/libFLRTestLibrary.a'
 end
