@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'FLRTestLibrary'
-  spec.version      = '0.0.1'
+  spec.version      = '0.0.2'
   spec.summary      = 'This is my first private library.'
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author             = { "Flandre" => "449298939@qq.com" }
