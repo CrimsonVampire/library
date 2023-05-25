@@ -1,13 +1,13 @@
 //
-//  TestLibrary.m
-//  TestLibrary
+//  FLRTestLibrary.m
+//  FLRTestLibrary
 //
 //  Created by Flandre on 2022/7/1.
 //
 
-#import "TestLibrary.h"
+#import "FLRTestLibrary.h"
 
-@implementation TestLibrary
+@implementation FLRTestLibrary
 
 + (void)initWithConfig:(NSString *)config {
     

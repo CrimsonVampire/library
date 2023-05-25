@@ -1,6 +1,6 @@
 //
-//  TestLibrary.h
-//  TestLibrary
+//  FLRTestLibrary.h
+//  FLRTestLibrary
 //
 //  Created by Flandre on 2022/7/1.
 //
@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 
 // Version 1.0.0
-@interface TestLibrary : NSObject
+@interface FLRTestLibrary : NSObject
 
 + (void)initWithConfig:(NSString *)config;
 

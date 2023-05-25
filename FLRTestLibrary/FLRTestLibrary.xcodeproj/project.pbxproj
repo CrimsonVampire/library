@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		842E1AD2286EDE2200B44369 /* TestLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 842E1AD1286EDE2200B44369 /* TestLibrary.m */; };
-		842E1AD3286EDE2200B44369 /* TestLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 842E1AD0286EDE2200B44369 /* TestLibrary.h */; };
+		842E1AD2286EDE2200B44369 /* FLRTestLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 842E1AD1286EDE2200B44369 /* FLRTestLibrary.m */; };
+		842E1AD3286EDE2200B44369 /* FLRTestLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 842E1AD0286EDE2200B44369 /* FLRTestLibrary.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,16 +18,16 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				842E1AD3286EDE2200B44369 /* TestLibrary.h in CopyFiles */,
+				842E1AD3286EDE2200B44369 /* FLRTestLibrary.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		842E1ACD286EDE2200B44369 /* libTestLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTestLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		842E1AD0286EDE2200B44369 /* TestLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLibrary.h; sourceTree = "<group>"; };
-		842E1AD1286EDE2200B44369 /* TestLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestLibrary.m; sourceTree = "<group>"; };
+		842E1ACD286EDE2200B44369 /* libFLRTestLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFLRTestLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		842E1AD0286EDE2200B44369 /* FLRTestLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLRTestLibrary.h; sourceTree = "<group>"; };
+		842E1AD1286EDE2200B44369 /* FLRTestLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLRTestLibrary.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +44,7 @@
 		842E1AC4286EDE2200B44369 = {
 			isa = PBXGroup;
 			children = (
-				842E1ACF286EDE2200B44369 /* TestLibrary */,
+				842E1ACF286EDE2200B44369 /* FLRTestLibrary */,
 				842E1ACE286EDE2200B44369 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,26 +52,26 @@
 		842E1ACE286EDE2200B44369 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				842E1ACD286EDE2200B44369 /* libTestLibrary.a */,
+				842E1ACD286EDE2200B44369 /* libFLRTestLibrary.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		842E1ACF286EDE2200B44369 /* TestLibrary */ = {
+		842E1ACF286EDE2200B44369 /* FLRTestLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				842E1AD0286EDE2200B44369 /* TestLibrary.h */,
-				842E1AD1286EDE2200B44369 /* TestLibrary.m */,
+				842E1AD0286EDE2200B44369 /* FLRTestLibrary.h */,
+				842E1AD1286EDE2200B44369 /* FLRTestLibrary.m */,
 			);
-			path = TestLibrary;
+			path = FLRTestLibrary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		842E1ACC286EDE2200B44369 /* TestLibrary */ = {
+		842E1ACC286EDE2200B44369 /* FLRTestLibrary */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 842E1AD6286EDE2200B44369 /* Build configuration list for PBXNativeTarget "TestLibrary" */;
+			buildConfigurationList = 842E1AD6286EDE2200B44369 /* Build configuration list for PBXNativeTarget "FLRTestLibrary" */;
 			buildPhases = (
 				842E1AC9286EDE2200B44369 /* Sources */,
 				842E1ACA286EDE2200B44369 /* Frameworks */,
@@ -81,9 +81,9 @@
 			);
 			dependencies = (
 			);
-			name = TestLibrary;
+			name = FLRTestLibrary;
 			productName = TestLibrary;
-			productReference = 842E1ACD286EDE2200B44369 /* libTestLibrary.a */;
+			productReference = 842E1ACD286EDE2200B44369 /* libFLRTestLibrary.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +101,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 842E1AC8286EDE2200B44369 /* Build configuration list for PBXProject "TestLibrary" */;
+			buildConfigurationList = 842E1AC8286EDE2200B44369 /* Build configuration list for PBXProject "FLRTestLibrary" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,7 +114,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				842E1ACC286EDE2200B44369 /* TestLibrary */,
+				842E1ACC286EDE2200B44369 /* FLRTestLibrary */,
 			);
 		};
 /* End PBXProject section */
@@ -124,7 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				842E1AD2286EDE2200B44369 /* TestLibrary.m in Sources */,
+				842E1AD2286EDE2200B44369 /* FLRTestLibrary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +272,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		842E1AC8286EDE2200B44369 /* Build configuration list for PBXProject "TestLibrary" */ = {
+		842E1AC8286EDE2200B44369 /* Build configuration list for PBXProject "FLRTestLibrary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				842E1AD4286EDE2200B44369 /* Debug */,
@@ -281,7 +281,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		842E1AD6286EDE2200B44369 /* Build configuration list for PBXNativeTarget "TestLibrary" */ = {
+		842E1AD6286EDE2200B44369 /* Build configuration list for PBXNativeTarget "FLRTestLibrary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				842E1AD7286EDE2200B44369 /* Debug */,

@@ -14,7 +14,7 @@
 		842E1B0E286EDF4D00B44369 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842E1B0D286EDF4D00B44369 /* Assets.xcassets */; };
 		842E1B11286EDF4D00B44369 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842E1B0F286EDF4D00B44369 /* LaunchScreen.storyboard */; };
 		842E1B14286EDF4D00B44369 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 842E1B13286EDF4D00B44369 /* main.m */; };
-		842E1B1C286EDF7C00B44369 /* libTestLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 842E1B1B286EDF7C00B44369 /* libTestLibrary.a */; };
+		8495186D2A1F0D6B00DE236D /* libFLRTestLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8495186C2A1F0D6B00DE236D /* libFLRTestLibrary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +31,7 @@
 		842E1B12286EDF4D00B44369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		842E1B13286EDF4D00B44369 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		842E1B1B286EDF7C00B44369 /* libTestLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTestLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8495186C2A1F0D6B00DE236D /* libFLRTestLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFLRTestLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				842E1B1C286EDF7C00B44369 /* libTestLibrary.a in Frameworks */,
+				8495186D2A1F0D6B00DE236D /* libFLRTestLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +84,7 @@
 		842E1B1A286EDF7C00B44369 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8495186C2A1F0D6B00DE236D /* libFLRTestLibrary.a */,
 				842E1B1B286EDF7C00B44369 /* libTestLibrary.a */,
 			);
 			name = Frameworks;

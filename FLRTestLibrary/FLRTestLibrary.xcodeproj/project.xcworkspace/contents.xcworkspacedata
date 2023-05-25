@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:">
+      location = "self:/Users/admin/Desktop/works/Demo/library/TestLibrary/FLRTestLibrary.xcodeproj">
    </FileRef>
 </Workspace>
