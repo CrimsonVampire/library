@@ -9,6 +9,6 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '9.0'
   spec.source       = { :git => 'https://github.com/CrimsonVampire/library.git', :tag => spec.version.to_s }
   spec.source_files  = 'FLRTestLibrary/**/*.h'
-  spec.public_header_files = "FLRTestLibrary/**/*.h/**/*.h"
+  spec.public_header_files = "FLRTestLibrary/**/*.h"
   spec.ios.vendored_libraries   = 'FLRTestLibrary/libFLRTestLibrary.a'
 end
